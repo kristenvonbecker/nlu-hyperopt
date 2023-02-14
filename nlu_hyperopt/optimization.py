@@ -58,7 +58,7 @@ def run_trial(space):
 
 
     # Creating temporary config file containing space variables
-    os.makedirs(f'./{data_dir}/tmp', exist_ok=True)
+    os.makedirs(os.path.join(data_dir, "tmp"), exist_ok=True)
     config_path = os.path.join(data_dir, "tmp/template_config.yml")
 
     with open(os.path.join(data_dir, "template_config.yml")) as f:
