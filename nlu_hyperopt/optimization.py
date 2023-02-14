@@ -35,8 +35,8 @@ def run_trial(space):
        Hence, this function has to contain all the imports we need.
     """
 
-    data_dir = os.environ.get("INPUT_DATA_DIRECTORY", "./train_test_split")
-    model_dir = os.environ.get("INPUT_MODEL_DIRECTORY", "./models")
+    data_dir = os.environ.get("INPUT_DATA_DIRECTORY", "/train_test_split")
+    model_dir = os.environ.get("INPUT_MODEL_DIRECTORY", "/models")
     target_metric = os.environ.get("INPUT_TARGET_METRIC", "f1_score")
     training_data_path = os.path.join(data_dir, "training_data.yml")
     test_data_path = os.path.join(data_dir, "test_data.yml")
