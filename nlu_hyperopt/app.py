@@ -47,10 +47,10 @@ if __name__ == "__main__":
     # space = {'epochs': '10'}
     # run_trial(space)
 
-    exp_key = os.environ.get("INPUT_EXP_KEY", "default-experiment")
+    exp_key = os.environ.get("INPUT_EXP_KEY", "default-job")
     mongo_url = os.environ.get("INPUT_MONGO_URL")
 
-    max_evals = int(os.environ.get("INPUT_MAX_EVALS", 100))
+    max_evals = int(os.environ.get("INPUT_MAX_EVALS", 10))
 
     logger.info("Starting up\n"
                 "Running experiment : {}\n"
