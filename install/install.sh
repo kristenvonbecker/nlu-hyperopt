@@ -7,7 +7,7 @@ set -Eeuo pipefail
 #
 #######################################
 echo "Installing pip and ansible"
-sudo apt-get install python
+sudo apt-get install python3.8
 curl -O https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo pip install ansible
