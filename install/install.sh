@@ -23,4 +23,4 @@ echo "Docker installed"
 #
 #######################################
 echo "Running playbook"
-ansible-playbook -i "localhost," -c local playbook.yml
+ansible-playbook -i "localhost," -c local install/playbook.yml
